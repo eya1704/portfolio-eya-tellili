@@ -1,0 +1,12 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* Effet au survol des cartes d'expérience */
+.border-l-4 {
+    transition: all 0.3s ease;
+}
+.border-l-4:hover {
+    padding-left: 2rem;
+    border-color: #1e3a8a; /* Blue-900 */
+}

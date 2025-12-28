@@ -123,7 +123,7 @@
                 <a href="index_portfolio_eya.html" class="nav-link hover:text-blue-600 transition-colors">Accueil</a>
                 <a href="experience_eya.html" class="nav-link hover:text-blue-600 transition-colors">Expériences</a>
                 <a href="projets_eya.html" class="nav-link text-blue-600 font-bold">Projets</a>
-                <a href="index_portfolio_eya.html#contact" class="nav-link hover:text-blue-600 transition-colors">Contact</a>
+                <a href="contact_eya.html" class="nav-link hover:text-blue-600 transition-colors">Contact</a>
             </div>
         </div>
     </nav>
@@ -365,104 +365,87 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            
-            <!-- Projet Karting (Full width) -->
-            <div class="mt-8">
-                <div class="project-card bg-slate-800 rounded-2xl overflow-hidden shadow-2xl">
+
+                <!-- Projet Karting -->
+                <div class="project-card bg-slate-800 rounded-2xl overflow-hidden shadow-2xl md:col-span-2">
                     <div class="p-8">
                         <!-- Project header -->
-                        <div class="flex flex-col md:flex-row md:items-start justify-between mb-6">
-                            <div class="md:w-2/3">
+                        <div class="flex items-start justify-between mb-4">
+                            <div>
                                 <div class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-green-900/30 text-green-300 mb-3 border border-green-700/30">
-                                    <i class="fas fa-car mr-1"></i>
-                                    <span class="translate" data-en="Automotive Engineering" data-fr="Ingénierie Automobile">Ingénierie Automobile</span>
+                                    <i class="fas fa-tools mr-1"></i>
+                                    <span class="translate" data-en="Mechanical Troubleshooting" data-fr="Diagnostic Mécanique">Diagnostic Mécanique</span>
                                 </div>
-                                <h3 class="text-2xl font-bold mb-3 translate" 
-                                    data-en="Karting Engine & 3D Modeling" 
-                                    data-fr="Moteur & Modélisation 3D Karting">
-                                    Moteur & Modélisation 3D Karting
+                                <h3 class="text-2xl font-bold mb-2 translate" 
+                                    data-en="Karting Engine Diagnosis & 3D Modeling" 
+                                    data-fr="Diagnostic moteur & Modélisation Karting">
+                                    Diagnostic moteur & Modélisation Karting
                                 </h3>
-                                <p class="text-slate-400 text-sm mb-4 translate" 
-                                   data-en="Troubleshooting Briggs & Stratton engine and complete geometric modeling on CATIA V5."
-                                   data-fr="Diagnostic moteur Briggs & Stratton et modélisation complète sur CATIA V5.">
-                                   Diagnostic moteur Briggs & Stratton et modélisation complète sur CATIA V5.
-                                </p>
                             </div>
-                            <div class="mt-4 md:mt-0">
-                                <div class="inline-flex items-center px-4 py-2 bg-slate-700 rounded-lg">
-                                    <i class="fas fa-calendar-alt mr-2 text-green-400"></i>
-                                    <span class="text-sm font-medium translate" data-en="Duration: 3 months" data-fr="Durée : 3 mois">Durée : 3 mois</span>
+                        </div>
+                        
+                        <p class="text-slate-400 text-sm mb-6 translate" 
+                           data-en="Troubleshooting Briggs & Stratton engine and complete geometric modeling on CATIA V5."
+                           data-fr="Diagnostic moteur Briggs & Stratton et modélisation complète sur CATIA V5.">
+                           Diagnostic moteur Briggs & Stratton et modélisation complète sur CATIA V5.
+                        </p>
+                        
+                        <!-- Project media -->
+                        <div class="space-y-6">
+                            <!-- Images grid -->
+                            <div class="grid grid-cols-3 gap-4">
+                                <div class="group cursor-pointer" onclick="openModal('kart-1.jpg', 'image')">
+                                    <div class="relative rounded-lg overflow-hidden bg-slate-700">
+                                        <img 
+                                            src="kart-1.jpg" 
+                                            alt="Karting engine part 1" 
+                                            class="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
+                                        >
+                                        <div class="absolute inset-0 bg-green-900/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                            <i class="fas fa-expand text-white text-xl"></i>
+                                        </div>
+                                    </div>
+                                    <p class="text-xs text-slate-400 mt-2 text-center translate" data-en="Engine Analysis" data-fr="Analyse moteur">Analyse moteur</p>
+                                </div>
+                                
+                                <div class="group cursor-pointer" onclick="openModal('kart-2.jpg', 'image')">
+                                    <div class="relative rounded-lg overflow-hidden bg-slate-700">
+                                        <img 
+                                            src="kart-2.jpg" 
+                                            alt="Karting engine part 2" 
+                                            class="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
+                                        >
+                                        <div class="absolute inset-0 bg-green-900/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                            <i class="fas fa-expand text-white text-xl"></i>
+                                        </div>
+                                    </div>
+                                    <p class="text-xs text-slate-400 mt-2 text-center translate" data-en="CATIA Modeling" data-fr="Modélisation CATIA">Modélisation CATIA</p>
+                                </div>
+                                
+                                <div class="group cursor-pointer" onclick="openModal('kart-3.jpg', 'image')">
+                                    <div class="relative rounded-lg overflow-hidden bg-slate-700">
+                                        <img 
+                                            src="kart-3.jpg" 
+                                            alt="Karting engine part 3" 
+                                            class="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
+                                        >
+                                        <div class="absolute inset-0 bg-green-900/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                            <i class="fas fa-expand text-white text-xl"></i>
+                                        </div>
+                                    </div>
+                                    <p class="text-xs text-slate-400 mt-2 text-center translate" data-en="Assembly View" data-fr="Vue assemblage">Vue assemblage</p>
                                 </div>
                             </div>
                         </div>
                         
-                        <!-- Images grid -->
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-                            <div class="group cursor-pointer" onclick="openModal('kart-1.jpg', 'image')">
-                                <div class="relative rounded-xl overflow-hidden bg-slate-700">
-                                    <img 
-                                        src="kart-1.jpg" 
-                                        alt="Karting image 1" 
-                                        class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
-                                    >
-                                    <div class="absolute inset-0 bg-green-900/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                                        <i class="fas fa-expand text-white text-2xl"></i>
-                                    </div>
-                                </div>
-                                <p class="text-xs text-slate-400 mt-2 text-center translate" data-en="Engine Diagnosis" data-fr="Diagnostic moteur">Diagnostic moteur</p>
-                            </div>
-                            <div class="group cursor-pointer" onclick="openModal('kart-2.jpg', 'image')">
-                                <div class="relative rounded-xl overflow-hidden bg-slate-700">
-                                    <img 
-                                        src="kart-2.jpg" 
-                                        alt="Karting image 2" 
-                                        class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
-                                    >
-                                    <div class="absolute inset-0 bg-green-900/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                                        <i class="fas fa-expand text-white text-2xl"></i>
-                                    </div>
-                                </div>
-                                <p class="text-xs text-slate-400 mt-2 text-center translate" data-en="3D Modeling" data-fr="Modélisation 3D">Modélisation 3D</p>
-                            </div>
-                            <div class="group cursor-pointer" onclick="openModal('kart-3.jpg', 'image')">
-                                <div class="relative rounded-xl overflow-hidden bg-slate-700">
-                                    <img 
-                                        src="kart-3.jpg" 
-                                        alt="Karting image 3" 
-                                        class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
-                                    >
-                                    <div class="absolute inset-0 bg-green-900/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                                        <i class="fas fa-expand text-white text-2xl"></i>
-                                    </div>
-                                </div>
-                                <p class="text-xs text-slate-400 mt-2 text-center translate" data-en="Final Assembly" data-fr="Assemblage final">Assemblage final</p>
-                            </div>
-                        </div>
-                        
-                        <!-- Project details -->
-                        <div class="grid md:grid-cols-2 gap-6">
-                            <div class="p-4 bg-slate-700/50 rounded-lg">
-                                <h4 class="font-semibold mb-2 text-slate-300 flex items-center gap-2">
-                                    <i class="fas fa-wrench text-green-400"></i>
-                                    <span class="translate" data-en="Technical Skills" data-fr="Compétences techniques">Compétences techniques</span>
-                                </h4>
-                                <ul class="text-sm text-slate-400 space-y-1 ml-6 list-disc">
-                                    <li class="translate" data-en="3D geometric modeling" data-fr="Modélisation géométrique 3D">Modélisation géométrique 3D</li>
-                                    <li class="translate" data-en="Engine troubleshooting" data-fr="Diagnostic moteur">Diagnostic moteur</li>
-                                    <li class="translate" data-en="Technical documentation" data-fr="Documentation technique">Documentation technique</li>
-                                </ul>
-                            </div>
-                            <div class="p-4 bg-slate-700/50 rounded-lg">
-                                <h4 class="font-semibold mb-2 text-slate-300 flex items-center gap-2">
-                                    <i class="fas fa-cogs text-green-400"></i>
-                                    <span class="translate" data-en="Technologies Used" data-fr="Technologies utilisées">Technologies utilisées</span>
-                                </h4>
-                                <div class="flex flex-wrap gap-2 mt-2">
-                                    <span class="project-tag px-3 py-1 bg-slate-600 text-slate-300 rounded-full text-xs">CATIA V5</span>
-                                    <span class="project-tag px-3 py-1 bg-slate-600 text-slate-300 rounded-full text-xs">SolidWorks</span>
-                                    <span class="project-tag px-3 py-1 bg-slate-600 text-slate-300 rounded-full text-xs">AutoCAD</span>
-                                </div>
+                        <!-- Technologies used -->
+                        <div class="mt-6 pt-6 border-t border-slate-700">
+                            <h4 class="text-sm font-semibold mb-3 text-slate-300 translate" data-en="Technologies Used" data-fr="Technologies utilisées">Technologies utilisées</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="project-tag px-3 py-1 bg-slate-700 text-slate-300 rounded-full text-xs font-medium">CATIA V5</span>
+                                <span class="project-tag px-3 py-1 bg-slate-700 text-slate-300 rounded-full text-xs font-medium">Engine Diagnostics</span>
+                                <span class="project-tag px-3 py-1 bg-slate-700 text-slate-300 rounded-full text-xs font-medium">3D Modeling</span>
+                                <span class="project-tag px-3 py-1 bg-slate-700 text-slate-300 rounded-full text-xs font-medium">Mechanical Analysis</span>
                             </div>
                         </div>
                     </div>
@@ -503,11 +486,11 @@
             <div class="mt-12 pt-8 border-t border-slate-100">
                 <h3 class="text-xl font-bold mb-6 text-center text-slate-700 translate" data-en="Additional Competencies" data-fr="Compétences Additionnelles">Compétences Additionnelles</h3>
                 <div class="flex flex-wrap justify-center gap-3">
-                    <span class="px-4 py-2 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Finite Element Method</span>
-                    <span class="px-4 py-2 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Computational Fluid Dynamics</span>
-                    <span class="px-4 py-2 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Composite Materials</span>
-                    <span class="px-4 py-2 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Manufacturing Processes</span>
-                    <span class="px-4 py-2 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Quality Control</span>
+                    <span class="px-4 py-2 bg-slate-100 text-slate-700 rounded-full text-sm font-medium translate" data-en="Finite Element Method" data-fr="Méthode des Éléments Finis">Méthode des Éléments Finis</span>
+                    <span class="px-4 py-2 bg-slate-100 text-slate-700 rounded-full text-sm font-medium translate" data-en="Computational Fluid Dynamics" data-fr="Dynamique des Fluides Numérique">Dynamique des Fluides Numérique</span>
+                    <span class="px-4 py-2 bg-slate-100 text-slate-700 rounded-full text-sm font-medium translate" data-en="Composite Materials" data-fr="Matériaux Composites">Matériaux Composites</span>
+                    <span class="px-4 py-2 bg-slate-100 text-slate-700 rounded-full text-sm font-medium translate" data-en="Manufacturing Processes" data-fr="Procédés de Fabrication">Procédés de Fabrication</span>
+                    <span class="px-4 py-2 bg-slate-100 text-slate-700 rounded-full text-sm font-medium translate" data-en="Quality Control" data-fr="Contrôle Qualité">Contrôle Qualité</span>
                 </div>
             </div>
         </div>
@@ -531,45 +514,199 @@
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="bg-slate-900 text-white pt-12 pb-10 px-6">
-        <div class="max-w-6xl mx-auto">
-            <div class="grid md:grid-cols-3 gap-12 mb-16 text-center md:text-left">
+    <!-- Footer minimaliste -->
+    <footer class="bg-white border-t border-gray-100 py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <!-- Contact info -->
                 <div>
-                    <h3 class="text-xl font-bold mb-6 translate" data-en="Contact Details" data-fr="Coordonnées">Coordonnées</h3>
-                    <ul class="space-y-4 text-slate-400">
-                        <li class="flex items-center justify-center md:justify-start gap-3">
-                            <i class="fas fa-envelope text-blue-400"></i>
-                            <a href="mailto:eya.tellili@etudiant-enit.utm.tn" class="hover:text-white transition">eya.tellili@etudiant-enit.utm.tn</a>
-                        </li>
-                        <li class="flex items-center justify-center md:justify-start gap-3">
-                            <i class="fas fa-phone text-blue-400"></i>
-                            <span>+216 23 695 271</span>
-                        </li>
-                        <li class="flex items-center justify-center md:justify-start gap-3">
-                            <i class="fas fa-map-marker-alt text-blue-400"></i>
+                    <h3 class="font-bold text-lg mb-4">Contact</h3>
+                    <div class="space-y-3">
+                        <a href="mailto:eya.tellili@etudiant-enit.utm.tn" 
+                           class="flex items-center gap-3 text-gray-600 hover:text-gray-900 transition-colors">
+                            <i class="fas fa-envelope"></i>
+                            <span>eya.tellili@etudiant-enit.utm.tn</span>
+                        </a>
+                        <div class="flex items-center gap-3 text-gray-600">
+                            <i class="fas fa-map-marker-alt"></i>
                             <span>Tunis, Tunisie</span>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
                 
+                <!-- Navigation footer -->
                 <div>
-                    <h3 class="text-xl font-bold mb-6 translate" data-en="Navigation" data-fr="Navigation">Navigation</h3>
-                    <div class="flex flex-col gap-4 text-slate-400">
-                        <a href="index_portfolio_eya.html" class="hover:text-white transition flex items-center gap-2">
-                            <i class="fas fa-home text-xs"></i> Accueil
-                        </a>
-                        <a href="experience_eya.html" class="hover:text-white transition flex items-center gap-2">
-                            <i class="fas fa-briefcase text-xs"></i> Expériences
-                        </a>
-                        <a href="projets_eya.html" class="hover:text-white transition flex items-center gap-2 text-blue-400">
-                            <i class="fas fa-project-diagram text-xs"></i> Projets
-                        </a>
-                        <a href="https://www.linkedin.com/in/eya-tellili-b5a01a289/" target="_blank" class="hover:text-white transition flex items-center gap-2">
-                            <i class="fab fa-linkedin text-xs"></i> LinkedIn
+                    <h3 class="font-bold text-lg mb-4">Navigation</h3>
+                    <div class="flex flex-col space-y-2">
+                        <a href="index_portfolio_eya.html" class="text-gray-600 hover:text-gray-900 transition-colors">Accueil</a>
+                        <a href="experience_eya.html" class="text-gray-600 hover:text-gray-900 transition-colors">Expériences</a>
+                        <a href="projets_eya.html" class="text-gray-600 hover:text-gray-900 transition-colors">Projets</a>
+                        <a href="associative_eya.html" class="text-gray-600 hover:text-gray-900 transition-colors">Vie Associative</a>
+                    </div>
+                </div>
+                
+                <!-- Social links -->
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Réseaux</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://www.linkedin.com/in/eya-tellili-b5a01a289/" target="_blank" 
+                           class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-gray-200 transition-colors">
+                            <i class="fab fa-linkedin text-gray-700"></i>
                         </a>
                     </div>
                 </div>
+            </div>
+            
+            <div class="mt-12 pt-8 border-t border-gray-100 text-center">
+                <p class="text-gray-500 text-sm">
+                    © 2025 Eya Tellili — École Nationale d'Ingénieurs de Tunis
+                </p>
+                <p class="text-gray-400 text-xs mt-2">
+                    Actuellement à la recherche d'un stage de Projet de Fin d'Études (PFE) à partir de février 2025.
+                </p>
+            </div>
+        </div>
+    </footer>
 
-                <div>
-                    <h3 class="text-xl font-bold mb-6 translate" data-en="Current Status" data-fr="Statut Actuel">Statut Actuel</h3
+    <!-- Modal pour agrandir les médias -->
+    <div id="mediaModal" class="hidden fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4 modal-overlay">
+        <div class="relative max-w-6xl w-full max-h-[90vh] modal-content">
+            <button 
+                onclick="closeModal()"
+                class="absolute -top-12 right-0 text-white text-3xl hover:text-gray-300 transition-colors z-10"
+                aria-label="Fermer"
+            >
+                <i class="fas fa-times"></i>
+            </button>
+            <div id="modalContent" class="rounded-lg overflow-hidden bg-slate-800 h-full flex items-center justify-center">
+                <!-- Contenu chargé dynamiquement -->
+            </div>
+            <div class="text-white text-center mt-4 text-sm">
+                <p class="translate" data-en="Press ESC to close" data-fr="Appuyez sur ESC pour fermer">Appuyez sur ESC pour fermer</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Gestion de la traduction
+        let currentLanguage = 'fr';
+        
+        function setLanguage(lang) {
+            currentLanguage = lang;
+            
+            // Mettre à jour les boutons de langue
+            const btnEn = document.getElementById('btn-en');
+            const btnFr = document.getElementById('btn-fr');
+            
+            if (btnEn && btnFr) {
+                if (lang === 'en') {
+                    btnEn.classList.add('bg-white', 'shadow-sm');
+                    btnFr.classList.remove('bg-white', 'shadow-sm');
+                } else {
+                    btnFr.classList.add('bg-white', 'shadow-sm');
+                    btnEn.classList.remove('bg-white', 'shadow-sm');
+                }
+            }
+            
+            // Mettre à jour tous les éléments avec la classe 'translate'
+            document.querySelectorAll('.translate').forEach(element => {
+                if (element.dataset[lang]) {
+                    element.textContent = element.dataset[lang];
+                }
+            });
+            
+            // Mettre à jour le titre de la page
+            updatePageTitle(lang);
+            
+            // Sauvegarder la préférence
+            localStorage.setItem('preferredLanguage', lang);
+        }
+        
+        function updatePageTitle(lang) {
+            if (lang === 'en') {
+                document.title = "Projects | Eya Tellili";
+            } else {
+                document.title = "Projets | Eya Tellili";
+            }
+        }
+        
+        // Initialiser la langue au chargement
+        document.addEventListener('DOMContentLoaded', function() {
+            // Récupérer la langue sauvegardée ou utiliser le français par défaut
+            const savedLang = localStorage.getItem('preferredLanguage') || 'fr';
+            setLanguage(savedLang);
+            
+            // Gestion du menu mobile
+            const mobileMenuButton = document.getElementById('mobileMenuButton');
+            const mobileMenu = document.getElementById('mobileMenu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('open');
+                });
+                
+                // Fermer le menu en cliquant sur un lien
+                mobileMenu.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', function() {
+                        mobileMenu.classList.remove('open');
+                    });
+                });
+            }
+        });
+        
+        // Gestion du modal
+        function openModal(src, type) {
+            const modal = document.getElementById('mediaModal');
+            const content = document.getElementById('modalContent');
+            
+            if (type === 'video') {
+                content.innerHTML = `
+                    <video 
+                        src="${src}" 
+                        class="w-full max-h-[80vh] object-contain"
+                        controls
+                        autoplay
+                        muted
+                    >
+                        Votre navigateur ne supporte pas les vidéos HTML5.
+                    </video>
+                `;
+            } else {
+                content.innerHTML = `
+                    <img 
+                        src="${src}" 
+                        class="w-full max-h-[80vh] object-contain"
+                        alt="Agrandi"
+                        loading="lazy"
+                    >
+                `;
+            }
+            
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeModal() {
+            const modal = document.getElementById('mediaModal');
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+            
+            // Arrêter la vidéo si elle joue
+            const video = modal.querySelector('video');
+            if (video) {
+                video.pause();
+            }
+        }
+        
+        // Fermer avec ESC
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeModal();
+        });
+        
+        // Fermer en cliquant en dehors du modal
+        document.getElementById('mediaModal').addEventListener('click', (e) => {
+            if (e.target.id === 'mediaModal') closeModal();
+        });
+    </script>
+</body>
+</html>
